@@ -12,7 +12,7 @@ The most important idea in the tranformer model is Self Attention. Self-attentio
 
 3. Compute weight and calculate correlation: The correlation between two vectors can be calculated using the dot product
 
-    
+    ```bash
     Correlation between "I" and "I": [0.2, 0.3, 0.1] * [0.2, 0.3, 0.1] = 0.14
     Correlation between "I" and "like": [0.2, 0.3, 0.1] * [0.7, 0.5, 0.9] = 0.41
     Correlation between "I" and "you": [0.2, 0.3, 0.1] * [0.4, 0.2, 0.6] = 0.22
@@ -39,12 +39,13 @@ The most important idea in the tranformer model is Self Attention. Self-attentio
 
 6. Multiply values with orignal word vectors, to form weighted sum
 
+    ```bash
     Weighted Sum for "I": [0.199 * 0.2, 0.199 * 0.3, 0.199 * 0.1] = [0.0398, 0.0597, 0.0199]
     Weighted Sum for "like": [0.274 * 0.7, 0.274 * 0.5, 0.274 * 0.9] = [0.1918, 0.137, 0.2466]
     Weighted Sum for "you": [0.195 * 0.4, 0.195 * 0.2, 0.195 * 0.6] = [0.078, 0.039, 0.117]
 
 
-![Weighted sum](E:\Github Projects\Transformers implementation (PyTorch)\Screenshot (160).png)
+![Weighted sum](https://github.com/ArchitJambhule1011/Transformers_implementation_-PyTorch-/blob/main/Screenshot%20(160).png)
 
 7. Add up the weighted sum, to create new summary representation.
 
